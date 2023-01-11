@@ -1,0 +1,255 @@
+/* 总布局 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::before{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+/* 版心 */
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+}
+body{
+    background-color: #cccccc;
+}
+/* 头部 */
+.header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 42px;
+     /* background-color:white; */
+}
+.header h1{
+    float: left;
+}
+.header ul li{
+    float:left;
+    margin-right:26px ;
+    
+}
+ul li a{
+    display: block;
+    height: 42px;
+    padding-right: 9px;
+    padding-left: 9px;
+    line-height: 42px;
+    color: black;
+}
+.header ul li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+.nav{
+    float: left;
+    height: 42px;
+    /* background-color:green; */
+    margin-left: 70px;
+}
+.search{
+    float: left;
+    height: 42px;
+    width: 412px;
+    border: 1px solid #00a4ff;
+    margin-left: 59px;
+}
+.search input{
+    padding-left: 20px;
+    width: 360px;
+    height: 40px;
+    border: 0;
+}
+.search input::placeholder{
+    font-size: 14px;
+    color:#bfbfbf;
+}
+.search button{
+    float: right;
+    width: 50px;
+    height: 40px;
+    border: 0;
+    background-image: url(../image/btn.png);
+}
+.user{
+    float:right;
+    height: 42px;
+    margin-right: 35px;
+}
+.user img{
+    padding-top: 5px;
+}
+.user span{
+    display: block;
+    float: right;
+    height: 42px;
+    line-height: 42px;
+}
+/* 第一栏 */
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+}
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../image/banner2.png);
+}
+.banner .left{
+    float: left;
+    padding:0 20px;
+    height: 420px;
+    width: 190px;
+    background-color: rgba(0,0,0,0.3);
+    line-height: 44px;
+}
+.banner .right{
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+.banner .left ul li a{
+    float: left;
+    color: white;
+}
+.left ul li span{
+    float: right;
+}
+.banner .left a:hover{
+    font-size: 14px;
+    color: #00a4ff;
+}
+.banner .right h1{
+    text-align: center;
+    line-height: 48px;
+    height: 48px;
+    background-color: #9bceea;
+    color: white;
+
+}
+.banner .right .content{
+    padding: 0 18px; 
+}
+.banner .right .content dl{
+    padding: 10px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+.banner .right .content dl dt{
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.banner .right .content dd{
+    font-size: 14px;
+    color: #4e4e4e;
+}
+.banner .right a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 4px auto;
+    border: 2px solid #00a4ff;
+    font-size: 16px;
+    color:#00a4ff;
+    text-align: center;
+    line-height: 40px;
+}
+.introduce{
+    margin-top: 8px;
+    height: 60px;
+    background-color: #ffffff;
+    line-height: 60px;
+}
+.introduce h1{
+    float: left;
+    margin-left: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00a4ff;
+}
+.introduce ul{
+    float: left;
+    margin-left: 30px;
+}
+.introduce .interest{
+    float: right;
+    padding-right: 26px;
+    font-size: 14px;
+    color:#00a4ff;
+}
+.introduce ul li{
+    float:left;
+
+}
+.introduce ul a{
+    border-left:1px solid #bfbfbf;
+    padding: 0 34px;
+    font-size: 16px;
+    color:#050505;
+}
+/* 精品推荐区 */
+.box{
+    margin-top: 35px; 
+    overflow: hidden;  
+}
+.box .title{
+    /* background-color: white; */
+    height: 40px;
+}
+.box .title h1{
+    float: left;
+    font-size: 20px;
+    color:#494949;
+}
+.box .title a{
+    float: right;
+    font-size: 12px;
+    margin-right: 30px;
+    color: #a5a5a5;
+}
+.box .content ul li{
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color:white;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box .content ul li:nth-child(5n){
+    margin-right: 0;
+}
+.box .content ul li a{
+    float: left;
+    padding:0;
+    text-align: center;
+}
+.box .content ul li a img{
+    width: 228px;
+}
+.box .content ul li a h4{
+    font-size: 10px;
+}
+.box .content ul li a p{
+    font-size: 14px;
+    color:blue;
+}
+.box .content ul li span{
+    color: orange;
+    padding-right: 3px;
+    margin-right: 3px;
+    border-right:2px  solid #cccccc;
+}
+.footer{
+    height: 417px;
+    background-color: #ffffff;
+}
